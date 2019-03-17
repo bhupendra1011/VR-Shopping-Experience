@@ -79,7 +79,7 @@ AFRAME.registerComponent('log', {
     msg.volume = 1;
     msg.rate = 1;
     msg.pitch = 1;
-    var voiceSelect = "Google हिन्दी";
+    var voiceSelect = "Google UK English Female"; //  Google हिन्दी
     msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voiceSelect; })[0];
     window.speechSynthesis.speak(msg);
 	}  
@@ -185,7 +185,7 @@ AFRAME.registerComponent('log', {
       <!-- Example Room 2-->
       <img id="room2-final1" src="img/room2/final-1.png">
       <img id="room2-final2" src="img/room2/final-2.png">
-      <img id="room2-final3" src="img/room2/final-3.png">
+      <img id="gullyboy" src="img/room2/gullyboy1.png">
       <img id="room2-final4" src="img/room2/final-4.png">
       <img id="room2-mock1" src="img/room2/mock-1.png">
       <img id="room2-mock2" src="img/room2/mock-2.png">
@@ -238,7 +238,7 @@ AFRAME.registerComponent('log', {
 
     <a-assets>
       <!-- walking sound -->
-        <audio id="river" src="/sound/walk.mp3"></audio>
+        <audio id="river" src="./sound/walk.mp3"></audio>
       </a-assets>
       <a-assets>
         <!-- audio songs-->
@@ -337,7 +337,7 @@ AFRAME.registerComponent('log', {
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-sign-1" height="1.5" width="3"></a-image>
       <a-image position="1.45 1 6.02" rotation="0 -90 0" src="#room-sign-2" height="1.5" width="3"></a-image>
       <!-- Back wall -->
-      <a-image position="-2 0 -4.4" cursor-listener src="#room2-final1" height="2.5" width="2.5"  onmouseenter="myVr.playsong('/sound/chetak.mp3','#box1');" onmouseleave="myVr.stopSong('#box1')" >
+      <a-image position="-2 0 -4.4" cursor-listener src="#room2-final1" height="2.5" width="2.5"  onmouseenter="myVr.playsong('./sound/chetak.mp3','#box1');" onmouseleave="myVr.stopSong('#box1')" >
         <a-plane visible="true" id="box1" onclick="myVr.buyAlbum('#box1')" class="buy-panel" color="#ecefd5" rotation="0 0 0" position="-.09 -0.62 0.1" material="side:double " width="2" height=".5">
           <a-text color="#3c420e" align="center"  value="Buy ($ 10)"></a-text>
           
@@ -345,19 +345,19 @@ AFRAME.registerComponent('log', {
       </a-image>
 
 
-      <a-image position="-2 2.4 -4.4" cursor-listener src="#room2-final2" height="2.5" width="2.5" onmouseenter="myVr.playsong('/sound/ghugat.mp3.','#box2');" onmouseleave="myVr.stopSong()">
+      <a-image position="-2 2.4 -4.4" cursor-listener src="#room2-final2" height="2.5" width="2.5" onmouseenter="myVr.playsong('./sound/ghugat.mp3.','#box2');" onmouseleave="myVr.stopSong()">
         <a-plane visible="true" id="box2" onclick="myVr.buyAlbum('#box2')" class="buy-panel" color="#ecefd5" rotation="0 0 0" position="-.09 -0.62 0.1" material="side:double " width="2" height=".5">
           <a-text color="#3c420e" align="center"  value="Buy ($ 10)"></a-text>
          
        </a-plane>
       </a-image>
-      <a-image position="2 0 -4.4" cursor-listener src="#room2-final3" height="2.5" width="2.5"    onmouseenter="myVr.playsong('/sound/bhukalyki.mp3','#box3');" onmouseleave="myVr.stopSong()" >
+      <a-image position="2 0 -4.4" cursor-listener src="#gullyboy" height="2.5" width="2.5"    onmouseenter="myVr.playsong('./sound/gullyboy.mp3','#box3');" onmouseleave="myVr.stopSong()" >
         <a-plane visible="true" id="box3" onclick="myVr.buyAlbum('#box3')" class="buy-panel" color="#ecefd5" rotation="0 0 0" position="-0.08 -0.68 0.01" material="side:double " width="2" height=".5">
           <a-text color="#3c420e" align="center"  value="Buy ($ 20)"></a-text>
          
        </a-plane>
       </a-image>
-      <a-image position="2 2.4 -4.4" cursor-listener src="#room2-final4" height="2.5" width="2.5" onmouseenter="myVr.playsong('/sound/oyelucky.mp3','#box4');" onmouseleave="myVr.stopSong()"  >
+      <a-image position="2 2.4 -4.4" cursor-listener src="#room2-final4" height="2.5" width="2.5" onmouseenter="myVr.playsong('./sound/oyelucky.mp3','#box4');" onmouseleave="myVr.stopSong()"  >
         <a-plane visible="true" id="box4" onclick="myVr.buyAlbum('#box4')" class="buy-panel" color="#ecefd5" rotation="0 0 0" position="-.09 -0.62 0.1" material="side:double " width="2" height=".5">
           <a-text color="#3c420e" align="center"  value="Buy ($ 10)"></a-text>
         
