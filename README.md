@@ -22,6 +22,8 @@ How to use:
 - Use Joystick to control the movement and headset for view
 - Ray Caster has also been added so when in VR mode, a cursor would appear , Gaze the cursor for 500ms on an element and then click event would be triggered.
 
+Experience *VR-DEMO* Shopping App [here](https://bhupendra1011.github.io/VR-shopping/)
+
 
 
  
